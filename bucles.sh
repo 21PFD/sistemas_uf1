@@ -4,9 +4,9 @@ echo "Ejercicio de bucles"
 
 for VARIABLE in `ls`; do
 	if [ -e $VARIABLE ];then	
-		echo "Existe: $VARIABLE"
+		echo -e "\e[32mExixste: $VARIABLE\e[0m"
 	else
-		echo "No existe: $VARIABLE"
+		echo -e "\e[31mNo existe: $VARIABLE\e[0m"
 	
 	fi
 done
