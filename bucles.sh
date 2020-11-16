@@ -7,5 +7,6 @@ for VARIABLE in `ls`; do
 		echo "Existe: $VARIABLE"
 	else
 		echo "No existe: $VARIABLE"
+	
 	fi
 done
