@@ -9,7 +9,8 @@ for ARCHIVO  in `ls *.mp4`; do
 	echo $VIDEO
 	if [ "$VIDEO" != "" ]; then
 		#md5sum $ARCHIVO
-		ffmpeg -i $ARCHIVO $ARCHIVO.mkv
+		NOMBRE=`echo $ARCHIVO | cut -d "." -f 1 `
+		ffmpeg -i $ARCHIVO $NOMBRE.mkv
 	fi
 done
 
