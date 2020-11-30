@@ -2,7 +2,7 @@
 
 echo "Ejercicio de bucles"
 
-for VARIABLE in `ls`; do
+for VARIABLE in `ls *.sh`; do
 	if [ -e $VARIABLE ];then	
 		echo -e "\e[32mExixste: $VARIABLE\e[0m"
 	else
